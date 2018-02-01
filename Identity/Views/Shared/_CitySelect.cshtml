@@ -1,0 +1,15 @@
+﻿@model List<Identity.Models.City>
+
+<label class="control-label col-md-2">
+    City
+</label>
+<div class="col-md-10">
+    <select name="CityId">
+        @foreach (var item in Model)
+        {
+        <option value="@item.Id">
+            @item.Name
+        </option>
+        }
+    </select>
+</div>
